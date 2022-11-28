@@ -38,6 +38,10 @@ public class Main {
 
 
     private static double calculateBasicOperations(String sum) {
+        if(sum.contains("--")){
+            // to handle equations like 10 - ( 2 - ( 20 - 8 ) )
+            sum = sum.replace("--","+");
+        }
 
         LinkedList<String> equationList = new LinkedList<>();
         char[] charList = sum.toCharArray();
