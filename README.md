@@ -4,7 +4,7 @@
 
 *Time taken: Approximately 2+ days*
 
-This application is a calculator which takes string as an input. The code loops through the full equation (user input) to find basic equations within a pair of parentheses (if any) to be solved first. Basic equation in this context means equations with no parentheses, e.g 5+4, 6*2-1. It solves the basic equation within the bracket and replaces the basic equation with the answer in the full equation (user input). The loop runs until all the parentheses are replaced with the corresponding answer which leaves the full equation in a form the basic equation. And the basic equation is resolved. To simplify the explanation: 
+This application is a calculator which takes string as an input. The code loops through the full equation (user input) to find basic equations within a pair of parentheses (if any) to be solved first. Basic equation in this context means equations with no parentheses, e.g 5+4, 6*2-1. It solves the basic equation within the bracket and replaces the basic equation with the answer in the full equation (user input). The loop runs until all the parentheses are replaced with the corresponding answer which transforms the full equation to a basic equation. And the basic equation is resolved. To simplify the explanation: 
 
 Input: 10 - ( 2 + 3 * ( 7 - ( 5 - 1 ) ) )   
 
