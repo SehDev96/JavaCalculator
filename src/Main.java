@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class Main {
@@ -7,7 +8,8 @@ public class Main {
         String userInput = scanner.nextLine();
 
         if (isEquationValid(userInput)) {
-            System.out.println("Answer: " + calculate(userInput));
+            DecimalFormat df = new DecimalFormat("0.00");
+            System.out.println("Answer: " + df.format(calculate(userInput)));
         } else {
             throw new RuntimeException("Invalid Equation");
         }
