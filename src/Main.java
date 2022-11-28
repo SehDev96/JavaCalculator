@@ -39,10 +39,11 @@ public class Main {
     }
 
 
+    // Calculates basic equations e.g 5+4, 2*3-1
     private static double calculateBasicOperations(String sum) {
-        if(sum.contains("--")){
+        if (sum.contains("--")) {
             // to handle equations like 10 - ( 2 - ( 20 - 8 ) )
-            sum = sum.replace("--","+");
+            sum = sum.replace("--", "+");
         }
 
         LinkedList<String> equationList = new LinkedList<>();
@@ -84,7 +85,7 @@ public class Main {
             equationList.remove(index);
         }
 
-        if(equationList.size()==1){
+        if (equationList.size() == 1) {
             return Double.parseDouble(equationList.get(0));
         } else {
             throw new RuntimeException("Error in calculation");
@@ -150,6 +151,7 @@ public class Main {
         }
     }
 
+    // finds the index of matching closing parentheses for the given opening bracket index
     public static int findMatchingParenthesesIndex(int openingBracketIndex, String userInput) {
         int counter = 1;
         while (counter > 0) {
