@@ -20,7 +20,7 @@ public class Main {
         // remove empty spaces
         sum = sum.replaceAll("\\s", "");
 
-        while (sum.contains("(")) {
+        while (isParenthesesPresent(sum)) {
             for (int i = 0; i < sum.length(); i++) {
                 if (sum.charAt(i) == '(') {
                     int closingParenthesesIndex = findMatchingParenthesesIndex(i, sum);
